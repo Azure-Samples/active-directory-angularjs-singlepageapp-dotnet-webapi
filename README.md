@@ -143,7 +143,10 @@ To deploy the To Do SPA and To Go API to Azure Web Sites, you will create two we
 The key files containing authentication logic are the following:
 
 **App.js** - injects the ADAL module dependency, provides the app configuration values used by ADAL for driving protocol interactions with AAD and indicates whihc routes should not be accessed without previous authentication.
+
 **index.html** - contains a reference to adal.js
-**HomeController.js **- shows how to take advantage of the login() and logOut() methods in ADAL.
+
+**HomeController.js**- shows how to take advantage of the login() and logOut() methods in ADAL.
+
 **UserDataController.js** - shows how to extract user information from the cached id_token.
    
