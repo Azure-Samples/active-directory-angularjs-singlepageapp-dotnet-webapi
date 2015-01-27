@@ -150,3 +150,4 @@ The key files containing authentication logic are the following:
 
 **UserDataController.js** - shows how to extract user information from the cached id_token.
    
+Special thanks to @matvelloso for the assist in getting this sample out.
