@@ -13,7 +13,7 @@ using System.Configuration;
 
 namespace ToGoAPI.Controllers
 {
-    [EnableCors("https://localhost:44326, https://adaltodo.azurewebsites.net", "*", "*", SupportsCredentials = true)]
+    [EnableCors("Enter the location of your To Do List SPA client here, e.g. https://contosotodo.azurewebsites.net (do not include the trailing slash)", "*", "*", SupportsCredentials = true)]
     [Authorize]
     public class ToGoListController : ApiController
     {

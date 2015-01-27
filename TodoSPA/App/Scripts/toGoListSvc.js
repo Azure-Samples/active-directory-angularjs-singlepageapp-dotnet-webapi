@@ -2,25 +2,25 @@
 angular.module('todoApp')
 .factory('toGoListSvc', ['$http', function ($http) {
 
-    var apiEndpoint = "https://adaltogo.azurewebsites.net/api";
+    var apiEndpoint = "Enter the root location of your To Go API here, e.g. https://contosotogo.azurewebsites.net/";
 
     return {
         getItems: function () {
-            return $http.get(apiEndpoint + '/ToGoList');
+            return $http.get(apiEndpoint + 'api/ToGoList');
         },
         getItem: function (id) {
-            return $http.get(apiEndpoint + '/ToGoList/' + id);
+            return $http.get(apiEndpoint + 'api/ToGoList/' + id);
         },
         postItem: function (item) {
-            return $http.post(apiEndpoint + '/ToGoList/', item);
+            return $http.post(apiEndpoint + 'api/ToGoList/', item);
         },
         putItem: function (item) {
-            return $http.put(apiEndpoint + '/ToGoList/', item);
+            return $http.put(apiEndpoint + 'api/ToGoList/', item);
         },
         deleteItem: function (id) {
             return $http({
                 method: 'DELETE',
-                url: apiEndpoint + '/ToGoList/' + id,
+                url: apiEndpoint + 'api/ToGoList/' + id,
             });
         }
     };
