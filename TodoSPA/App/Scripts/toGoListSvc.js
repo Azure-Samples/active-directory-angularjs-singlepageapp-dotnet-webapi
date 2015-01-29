@@ -4,6 +4,9 @@ angular.module('todoApp')
 
     var apiEndpoint = "Enter the root location of your To Go API here, e.g. https://contosotogo.azurewebsites.net/";
 
+    $http.defaults.useXDomain = true;
+    delete $http.defaults.headers.common['X-Requested-With'];
+    
     return {
         getItems: function () {
             return $http.get(apiEndpoint + 'api/ToGoList');
