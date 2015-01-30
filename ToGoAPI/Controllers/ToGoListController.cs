@@ -8,12 +8,10 @@ using System.Web.Http;
 using System.Security.Claims;
 using ToGoAPI.DAL;
 using ToGoAPI.Models;
-using System.Web.Http.Cors;
 using System.Configuration;
 
 namespace ToGoAPI.Controllers
 {
-    [EnableCors("Enter the location of your To Do List SPA client here, e.g. https://contosotodo.azurewebsites.net (do not include the trailing slash)", "*", "*", SupportsCredentials = true)]
     [Authorize]
     public class ToGoListController : ApiController
     {
