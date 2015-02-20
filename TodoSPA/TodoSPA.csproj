@@ -118,12 +118,12 @@
     <Content Include="App\Scripts\indexCtrl.js" />
     <Content Include="App\Scripts\todoListCtrl.js" />
     <Content Include="App\Scripts\todoListSvc.js" />
-    <Content Include="App\Scripts\toGoListCtrl.js" />
-    <Content Include="App\Scripts\toGoListSvc.js" />
+    <Content Include="App\Scripts\filesCtrl.js" />
+    <Content Include="App\Scripts\filesSvc.js" />
     <Content Include="App\Scripts\userDataCtrl.js" />
     <Content Include="App\Views\Home.html" />
     <Content Include="App\Views\TodoList.html" />
-    <Content Include="App\Views\ToGoList.html" />
+    <Content Include="App\Views\Files.html" />
     <Content Include="App\Views\UserData.html" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
