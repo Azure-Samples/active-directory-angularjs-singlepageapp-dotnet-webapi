@@ -31,7 +31,7 @@ angular.module('todoApp', ['ngRoute','AdalAngular'])
             clientId: 'b075ddef-0efa-453b-997b-de1337c29185',
             extraQueryParameter: 'nux=1',
             endpoints: endpoints,
-            cacheLocation: 'localStorage', // enable this for IE, as sessionStorage does not work for localhost.
+            //cacheLocation: 'localStorage', // enable this for IE, as sessionStorage does not work for localhost.
         },
         $httpProvider
         );
