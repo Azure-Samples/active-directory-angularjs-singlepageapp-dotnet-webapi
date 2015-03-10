@@ -1,13 +1,13 @@
 ﻿'use strict';
 angular.module('todoApp')
-.controller('filesCtrl', ['$scope', '$location', 'filesSvc', 'adalAuthenticationService', function ($scope, $location, filesSvc, adalService) {
+.controller('graphCtrl', ['$scope', '$location', 'graphSvc', 'adalAuthenticationService', function ($scope, $location, graphSvc, adalService) {
     $scope.error = "";
     $scope.loadingMessage = "Loading...";
     $scope.files = null;
 
     $scope.populate = function () {
-        filesSvc.getItems().success(function (results) {
-            $scope.files = results;
+        graphSvc.getUsers().success(function (results) {
+            $scope.users = results;
             $scope.loadingMessage = "";
         }).error(function (err) {
             $scope.error = err;

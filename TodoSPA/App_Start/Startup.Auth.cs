@@ -14,6 +14,7 @@ namespace TodoSPA
             app.UseWindowsAzureActiveDirectoryBearerAuthentication(
                 new WindowsAzureActiveDirectoryBearerAuthenticationOptions
                 {
+                    MetadataAddress = "https://login.windows-ppe.net/strockisdevthree.ccsctp.net/federationmetadata/2007-06/federationmetadata.xml",
                     Audience = ConfigurationManager.AppSettings["ida:Audience"],
                     Tenant = ConfigurationManager.AppSettings["ida:Tenant"]
                 });

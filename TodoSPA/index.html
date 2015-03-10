@@ -25,8 +25,8 @@
                 <ul class="nav navbar-nav">
                     <li ng-class="{ active: isActive('/Home') }"><a href="#/Home">Home</a></li>
                     <li ng-class="{ active: isActive('/TodoList') }"><a href="#/TodoList">My To Do List</a></li>
-                    <li ng-class="{ active: isActive('/Files') }"><a href="#/Files">One Drive Files</a></li>
-                    <li ng-class="{ active: isActive('/UserData') }"><a href="#/UserData" ng-show="userInfo.isAuthenticated">User Info</a></li>
+                    <li ng-class="{ active: isActive('/Users') }"><a href="#/Users">Fellow Employees</a></li>
+                    <li ng-class="{ active: isActive('/UserData') }"><a href="#/UserData">User Info</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a class="btn btn-link" ng-show="userInfo.isAuthenticated" ng-click="logout()">Logout</a></li>
@@ -65,7 +65,7 @@
         <script src="App/Scripts/userDataCtrl.js"></script>
         <script src="App/Scripts/todoListCtrl.js"></script>
         <script src="App/Scripts/todoListSvc.js"></script>
-        <script src="App/Scripts/filesSvc.js"></script>
-        <script src="App/Scripts/filesCtrl.js"></script>
+        <script src="App/Scripts/graphSvc.js"></script>
+        <script src="App/Scripts/graphCtrl.js"></script>
 </body>
 </html>

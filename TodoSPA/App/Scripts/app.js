@@ -9,25 +9,27 @@ angular.module('todoApp', ['ngRoute','AdalAngular'])
         controller: "todoListCtrl",
         templateUrl: "/App/Views/TodoList.html",
         requireADLogin: true,
-    }).when("/Files", {
-        controller: "filesCtrl",
-        templateUrl: "/App/Views/Files.html",
+    }).when("/Users", {
+        controller: "graphCtrl",
+        templateUrl: "/App/Views/Users.html",
         requireADLogin: true,
     }).when("/UserData", {
         controller: "userDataCtrl",
         templateUrl: "/App/Views/UserData.html",
+        requireADLogin: true,
     }).otherwise({ redirectTo: "/Home" });
 
     var endpoints = {
 
         // Map the location of a request to an API to a the identifier of the associated resource
-        "https://graphdir1-my.sharepoint.com": "https://graphdir1-my.sharepoint.com",
+        "https://graph.ppe.windows.net/strockisdevthree.ccsctp.net/": "https://graph.ppe.windows.net/",
     };
 
     adalProvider.init(
         {
-            tenant: 'GraphDir1.onMicrosoft.com',
-            clientId: 'b8a1fa1b-a6c2-4f41-8db5-acd90a53d9bc',
+            instance: 'https://login.windows-ppe.net/',
+            tenant: 'strockisdevthree.ccsctp.net',
+            clientId: '82a2fb1c-d7fa-4f9a-be80-34ffd9622be8',
             extraQueryParameter: 'nux=1',
             endpoints: endpoints,
             cacheLocation: 'localStorage', // enable this for IE, as sessionStorage does not work for localhost.
