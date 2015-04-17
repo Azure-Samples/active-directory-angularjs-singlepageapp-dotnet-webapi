@@ -118,13 +118,13 @@
     <Content Include="App\Scripts\indexCtrl.js" />
     <Content Include="App\Scripts\todoListCtrl.js" />
     <Content Include="App\Scripts\todoListSvc.js" />
-    <Content Include="App\Scripts\graphCtrl.js" />
+    <Content Include="App\Scripts\profileCtrl.js" />
     <Content Include="App\Scripts\graphSvc.js" />
-    <Content Include="App\Scripts\userDataCtrl.js" />
+    <Content Include="App\Scripts\claimsCtrl.js" />
     <Content Include="App\Views\Home.html" />
     <Content Include="App\Views\TodoList.html" />
-    <Content Include="App\Views\Users.html" />
-    <Content Include="App\Views\UserData.html" />
+    <Content Include="App\Views\Profile.html" />
+    <Content Include="App\Views\Claims.html" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
     <Content Include="Web.config" />

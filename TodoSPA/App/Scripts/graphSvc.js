@@ -8,8 +8,8 @@ angular.module('todoApp')
     delete $http.defaults.headers.common['X-Requested-With'];
     
     return {
-        getUsers: function () {
-            return $http.get(apiEndpoint + 'users?api-version=1.5');
+        getProfile: function () {
+            return $http.get(apiEndpoint + 'me?api-version=1.5');
         },
     };
 }]);

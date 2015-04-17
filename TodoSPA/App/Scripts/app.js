@@ -9,13 +9,13 @@ angular.module('todoApp', ['ngRoute','AdalAngular'])
         controller: "todoListCtrl",
         templateUrl: "/App/Views/TodoList.html",
         requireADLogin: true,
-    }).when("/Users", {
-        controller: "graphCtrl",
-        templateUrl: "/App/Views/Users.html",
+    }).when("/Profile", {
+        controller: "profileCtrl",
+        templateUrl: "/App/Views/Profile.html",
         requireADLogin: true,
-    }).when("/UserData", {
-        controller: "userDataCtrl",
-        templateUrl: "/App/Views/UserData.html",
+    }).when("/Claims", {
+        controller: "claimsCtrl",
+        templateUrl: "/App/Views/Claims.html",
         requireADLogin: true,
     }).otherwise({ redirectTo: "/Home" });
 
@@ -35,6 +35,6 @@ angular.module('todoApp', ['ngRoute','AdalAngular'])
             cacheLocation: 'localStorage', // enable this for IE, as sessionStorage does not work for localhost.
         },
         $httpProvider
-        );
+    );
    
 }]);

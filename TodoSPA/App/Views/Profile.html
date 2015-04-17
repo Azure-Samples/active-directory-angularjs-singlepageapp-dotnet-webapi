@@ -1,0 +1,30 @@
+﻿<div ng-init="populate()">
+
+    <p>
+        This view makes a CORS request to the Azure AD Graph API for the authenticated user's profile.
+        You trigger adal.js to acquire a token for a particular resource by mapping a resourceId to an
+        API endpoint in the adalAuthenticationServiceProvider configuration's endpoints property.  Adal.js
+        will automatically add the access_token to the authorization header of any requests to the API endpoint.
+    </p>
+    <p>
+        <em>From app.js:</em>
+    </p>
+
+    <pre>
+    var endpoints = {
+
+        // Map the location of a request to an API to a the identifier of the associated resource
+        "https://graph.windows.net/{{tenant}}": "https://graph.windows.net/",
+    };
+    </pre>
+
+    <hr />
+
+    <p class="error">{{error}}</p>
+    <p>{{loadingMessage}}</p>
+
+    <div class="panel">
+        <p><em>{{profile.displayName}}'s Profile:</em></p>
+        <pre>{{profileString}}</pre>
+    </div>
+</div>

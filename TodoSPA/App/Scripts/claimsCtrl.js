@@ -1,8 +1,9 @@
 ﻿'use strict';
 angular.module('todoApp')
-.controller('userDataCtrl', ['$scope', 'adalAuthenticationService', function ($scope, adalService) {
+.controller('claimsCtrl', ['$scope', 'adalAuthenticationService', function ($scope, adalService) {
     
     $scope.claims = [];
+    $scope.userInfo = adalService.userInfo;
 
     for (var property in adalService.userInfo.profile) {
         if (adalService.userInfo.profile.hasOwnProperty(property)) {

@@ -1,6 +1,17 @@
 ﻿<div ng-init="populate()">
+
+    <p>
+        This view makes an ajax request to the the backend API of this single page app to fetch the user's To-Do list.
+        The backend API <code>/api/TodoList</code> is secured by Azure AD Bearer Authentication, and requires the caller
+        to present an access_token.  Upon navigation, adal.js will ensure the user is signed in, automatically acquire 
+        a token and attach it to any requests intended for the SPA's backend.
+    </p>
+
+    <hr />
+
     <p class="error">{{error}}</p>
     <p>{{loadingMessage}}</p>
+
     <div class="panel">
         <div class="input-group">
             <input ng-model="newTodoCaption" class="form-control" />

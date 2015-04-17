@@ -24,9 +24,9 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li ng-class="{ active: isActive('/Home') }"><a href="#/Home">Home</a></li>
-                    <li ng-class="{ active: isActive('/TodoList') }"><a href="#/TodoList">My To Do List</a></li>
-                    <li ng-class="{ active: isActive('/Users') }"><a href="#/Users">Fellow Employees</a></li>
-                    <li ng-class="{ active: isActive('/UserData') }"><a href="#/UserData">User Info</a></li>
+                    <li ng-class="{ active: isActive('/TodoList') }"><a href="#/TodoList">My To-Do List</a></li>
+                    <li ng-class="{ active: isActive('/Profile') }"><a href="#/Profile">User Profile</a></li>
+                    <li ng-class="{ active: isActive('/Claims') }"><a href="#/Claims">Token Claims</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a class="btn btn-link" ng-show="userInfo.isAuthenticated" ng-click="logout()">Logout</a></li>
@@ -42,7 +42,7 @@
         <div class="row">
             <div class="col-xs-10 col-xs-offset-1" style="background-color:azure">
                 <div class="page-header">
-                    <h1>Azure AD & AngularJS</h1>
+                    <h2>Azure AD & AngularJS</h2>
                 </div>
                 <p>This sample demonstrates how to take advantage of ADAL JS for adding Azure AD authentication to your AngularJS apps.</p>
             </div>
@@ -54,18 +54,19 @@
                 </div>
             </div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-        <script src="https://code.angularjs.org/1.2.25/angular-route.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <script src="App/Scripts/adal.js"></script>
-        <script src="App/Scripts/adal-angular.js"></script>
-        <script src="App/Scripts/app.js"></script>
-        <script src="App/Scripts/homeCtrl.js"></script>
-        <script src="App/Scripts/userDataCtrl.js"></script>
-        <script src="App/Scripts/todoListCtrl.js"></script>
-        <script src="App/Scripts/todoListSvc.js"></script>
-        <script src="App/Scripts/graphSvc.js"></script>
-        <script src="App/Scripts/graphCtrl.js"></script>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.2.25/angular-route.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="App/Scripts/adal.js"></script>
+    <script src="App/Scripts/adal-angular.js"></script>
+    <script src="App/Scripts/app.js"></script>
+    <script src="App/Scripts/homeCtrl.js"></script>
+    <script src="App/Scripts/claimsCtrl.js"></script>
+    <script src="App/Scripts/todoListCtrl.js"></script>
+    <script src="App/Scripts/todoListSvc.js"></script>
+    <script src="App/Scripts/graphSvc.js"></script>
+    <script src="App/Scripts/profileCtrl.js"></script>
 </body>
 </html>
