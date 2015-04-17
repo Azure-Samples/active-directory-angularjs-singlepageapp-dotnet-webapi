@@ -6,16 +6,20 @@
             <thead>
                 <tr>
                     <th>Name</th>
-                    <th>Type</th>
+                    <th>ObjectId</th>
+                    <th>UPN</th>
                 </tr>
             </thead>
             <tbody>
                 <tr data-ng-repeat="user in users.value">
                     <td>
-                        <p>{{user.name}}</p>
+                        <p>{{user.displayName}}</p>
                     </td>
                     <td>
-                        {{user.type}}
+                        {{user.objectId}}
+                    </td>
+                    <td>
+                        {{user.userPrincipalName}}
                     </td>
                 </tr>
             </tbody>
