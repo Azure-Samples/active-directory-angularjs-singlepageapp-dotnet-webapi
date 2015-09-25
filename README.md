@@ -1,7 +1,7 @@
 ---
-services:
-platforms:
-author: azure
+services: active-directory
+platforms: javascript
+author: dstrockis
 ---
 
 Call an Azure AD protected Web API in an AngularJS Single Page App
@@ -20,12 +20,12 @@ Getting started is simple!  To run this sample you will need:
 - An Internet connection
 - An Azure subscription (a free trial is sufficient)
 
-Every Azure subscription has an associated Azure Active Directory tenant.  If you don't already have an Azure subscription, you can get a free subscription by signing up at [http://www.windowsazure.com](http://www.windowsazure.com).  All of the Azure AD features used by this sample are available free of charge.
+Every Azure subscription has an associated Azure Active Directory tenant.  If you don't already have an Azure subscription, you can get a free subscription by signing up at [https://azure.microsoft.com](https://azure.microsoft.com).  All of the Azure AD features used by this sample are available free of charge.
 
 ### Step 1:  Clone or download this repository
 
 From your shell or command line:
-`git clone https://github.com/AzureADSamples/SinglePageApp-WebAPI-AngularJS-DotNet.git`
+`git clone https://github.com/Azure-Samples/active-directory-angularjs-singlepageapp-dotnet-webapi.git`
 
 ### Step 2:  Register the To Go API Service with your Azure Active Directory tenant
 
