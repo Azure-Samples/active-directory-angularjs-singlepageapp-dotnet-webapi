@@ -50,11 +50,10 @@ All done!  Before moving on to the next step, you need to find the App ID URI of
 2. In the ToGoAPI project, open the `web.config` file.
 3. Find the app key `ida:Tenant` and replace the value with your AAD tenant name.
 4. Find the app key `ida:Audience` and replace the value with the App ID URI you copied from the Azure portal.
-5. Also in the ToGoAPI project, open the file `Controllers/ToGoListController.cs`.  In the `[EnableCors...]` attribute, enter the location of the To Do SPA client.  By default it is `https://localhost:44326`.  Make sure to omit the trailing slash.
 5. In the TodoSPA project, open the file `App/Scripts/App.js` and locate the declaration of the `endpoints` object.
 6. Enter a mapping of the To Go API endpoint location to its resource identifier, or App ID URI.  The name of the property of the `endpoints` object should be the location of the To Go API.  By default, it is `https://localhost:44327/`.  The value of this property should be the App ID URI you copied from the portal, e.g. `https://<your_tenant_name>/ToGoAPI`.
-8. Don't worry about the other configuration values in this file yet, we'll come back to that in a second.
-9. Also in the TodoSPA project, open the file `App/Scripts/toGoListSvc.js`.  Replace the value of the `apiEndpoint` variable with the location of your To Go API.  By default, it is `https://localhost:44327/`.
+7. Don't worry about the other configuration values in this file yet, we'll come back to that in a second.
+8. Also in the TodoSPA project, open the file `App/Scripts/toGoListSvc.js`.  Replace the value of the `apiEndpoint` variable with the location of your To Go API.  By default, it is `https://localhost:44327/`.
 
 ### Step 4:  Register the To Do Single Page Application with your Azure Active Directory tenant
 
