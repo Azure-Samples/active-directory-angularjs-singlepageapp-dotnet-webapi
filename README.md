@@ -31,11 +31,11 @@ From your shell or command line:
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. On the top bar, click on your account and under the **Directory** list, choose the Active Directory tenant where you wish to register your application.
-2. Click on **More Services** in the left hand nav, and choose **Azure Active Directory**.
-3. Click on **Registered Applications** and choose **Add**.
-4. Enter a friendly name for the application, for example 'To Go API' and select 'Web Application and/or Web API' as the Application Type. For the sign-on URL, enter the base URL for the sample, which is by default `https://localhost:44327`. Click on **Create** to create the application.
-5. While still in the Azure portal, choose your application, click on **Settings** and choose **Properties**.
-6. Find the Application ID value and copy it to the clipboard.
+3. Click on **More Services** in the left hand nav, and choose **Azure Active Directory**.
+4. Click on **App registrations** and choose **Add**.
+5. Enter a friendly name for the application, for example 'To Go API' and select 'Web Application and/or Web API' as the Application Type. For the sign-on URL, enter the base URL for the sample, which is by default `https://localhost:44327`. Click on **Create** to create the application.
+6. While still in the Azure portal, choose your application, click on **Settings** and choose **Properties**.
+7. Find the Application ID value and copy it to the clipboard.
 
 ### Step 3:  Configure the To Go API to use your Azure Active Directory tenant
 
@@ -53,12 +53,12 @@ From your shell or command line:
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. On the top bar, click on your account and under the **Directory** list, choose the Active Directory tenant where you wish to register your application.
-2. Click on **More Services** in the left hand nav, and choose **Azure Active Directory**.
-3. Click on **Registered Applications** and choose **Add**.
-4. Enter a friendly name for the application, for example 'To Do SPA' and select 'Web Application and/or Web API' as the Application Type. For the sign-on URL, enter the base URL for the sample, which is by default `https://localhost:44326`. Click on **Create** to create the application.
-5. While still in the Azure portal, choose your application, click on **Settings** and choose **Properties**.
-6. Find the Application ID value and copy it to the clipboard.
-7. Configure Permissions for your application - in the Settings menu, choose the 'Required permissions' section, click on **Add**, then **Select an API**, and type "To Go API" in the text box. Then, click on  **Select Permissions** and select 'Access To Go API'.
+3. Click on **More Services** in the left hand nav, and choose **Azure Active Directory**.
+4. Click on **App registrations** and choose **Add**.
+5. Enter a friendly name for the application, for example 'To Do SPA' and select 'Web Application and/or Web API' as the Application Type. For the sign-on URL, enter the base URL for the sample, which is by default `https://localhost:44326`. Click on **Create** to create the application.
+6. While still in the Azure portal, choose your application, click on **Settings** and choose **Properties**.
+7. Find the Application ID value and copy it to the clipboard.
+8. Configure Permissions for your application - in the Settings menu, choose the 'Required permissions' section, click on **Add**, then **Select an API**, and type "To Go API" in the text box. Then, click on  **Select Permissions** and select 'Access To Go API'.
 
 ### Step 5:  Enable the OAuth2 implicit grant for your application
 
@@ -125,7 +125,7 @@ To deploy the To Do SPA and To Go API to Azure Web Sites, you will create two we
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. On the top bar, click on your account and under the **Directory** list, choose your Active Directory tenant.
 2. Click on **More Services** in the left hand nav, and choose **Azure Active Directory**.
-3. Click on **Registered Applications** and select the To Do SPA application.
+3. Click on **App registrations** and select the To Do SPA application.
 4. Go to **Settings** --> **Properties**, and update the Sign-On URL to the address of your SPA, for example https://todo-contoso.azurewebsites.net.
 5. Go to **Settings** --> **Reply URLs** and update the Reply URL field to the address of your SPA, for example https://todo-contoso.azurewebsites.net.
 
