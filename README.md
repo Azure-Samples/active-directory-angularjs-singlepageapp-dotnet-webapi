@@ -58,6 +58,7 @@ From your shell or command line:
 6. While still in the Azure portal, choose your application, click on **Settings** and choose **Properties**.
 7. Find the Application ID value and copy it to the clipboard.
 8. Configure Permissions for your application - in the Settings menu, choose the 'Required permissions' section, click on **Add**, then **Select an API**, and type "To Go API" in the text box. Then, click on  **Select Permissions** and select 'Access To Go API'.
+9. Grant permissions across your tenant for your application. Go to Settings -> Properties -> Required Permissions, and click on the **Grant Permissions** button in the top bar. Click **Yes** to confirm.
 
 ### Step 5:  Enable the OAuth2 implicit grant for your application
 
