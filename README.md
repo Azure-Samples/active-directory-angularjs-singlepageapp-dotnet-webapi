@@ -32,9 +32,10 @@ From your shell or command line:
 2. On the top bar, click on your account and under the **Directory** list, choose the Active Directory tenant where you wish to register your application.
 3. Click on **More Services** in the left hand nav, and choose **Azure Active Directory**.
 4. Click on **App registrations** and choose **Add**.
-5. Enter a friendly name for the application, for example 'To Go API' and select 'Web Application and/or Web API' as the Application Type. For the sign-on URL, enter the base URL for the sample, which is by default `https://localhost:44327`. For the App ID URI, enter https://<your_tenant_name>/ToGoAPI, replacing <your_tenant_name> with the name of your Azure AD tenant. Click on **Create** to create the application.
+5. Enter a friendly name for the application, for example 'To Go API' and select 'Web Application and/or Web API' as the Application Type. For the sign-on URL, enter the base URL for the sample, which is by default `https://localhost:44327`. Click on **Create** to create the application.
 6. While still in the Azure portal, choose your application, click on **Settings** and choose **Properties**.
 7. Find the Application ID value and copy it to the clipboard.
+8. For the App ID URI, enter https://\<your_tenant_name\>/ToGoAPI, replacing \<your_tenant_name\> with the name of your Azure AD tenant.
 
 ### Step 3:  Configure the To Go API to use your Azure Active Directory tenant
 
