@@ -15,6 +15,11 @@ For more information about how the protocols work in this scenario and other sce
 
 ## How To Run This Sample
 
+>[!Note] If you want to run this sample on **Azure Government**, navigate to the "Azure Government Deviations" section at the bottom of this page.
+>
+>
+>
+
 Getting started is simple!  To run this sample you will need:
 - Visual Studio 2013
 - An Internet connection
@@ -84,6 +89,19 @@ By default, applications provisioned in Azure AD are not enabled to use the OAut
 Clean the solution, rebuild the solution, and run it. 
 
 You can trigger the sign in experience by either clicking on the sign in link on the top right corner, or by clicking directly on the To Do List or To Go List tabs.  Explore the sample by signing in, adding items to the To Do List, removing the user account, and starting again.  Add places to the To Go List, performing CRUD operations against the To Go API using CORS.
+
+
+## Azure Government Deviations
+
+In order to run this sample on Azure Government you can follow through the steps above with a few variations:
+
+- Steps 2 + 4: 
+   - You must register this sample for your AAD Tenant in Azure Government by following Step 2 above in the [Azure Government portal](https://portal.azure.us). 
+- Step 3: 
+    - Before configuring the sample, you must make sure your [Visual Studio is connected to Azure Government](https://docs.microsoft.com/azure/azure-government/documentation-government-get-started-connect-with-vs).     
+    - In the TodoSPA project, open the file `App/Scripts/App.js` and locate the declaration of the `adalProvider.init` object. Set the `instance` property to `https://login.microsoftonline.us/`. 
+    
+Once those changes have been accounted for, you should be able to run this sample on Azure Government.  
 
 ## How To Deploy This Sample to Azure
 
